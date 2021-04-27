@@ -6,6 +6,7 @@ import transform from './transform.js'; // coordinate transformation
 import createTile from './tile.js';     // final simplified tile generation
 
 const defaultOptions = {
+    crs: 'EPSG:3857',       // 默认的投影坐标系 3857 4326走经纬度裁图
     maxZoom: 14,            // max zoom to preserve detail on
     indexMaxZoom: 5,        // max zoom in the tile index
     indexMaxPoints: 100000, // max number of points per tile in the tile index
